@@ -37,11 +37,11 @@
     <div class="conatiner">
         <div class="jumbotron" style="width: 60%; margin-left: 23%; padding: 20px; background-color: gray; ">
             <form>
-               <div class="form-group">
+                <div class="form-group">
                  <label for="Question">Question</label>
                  <input type="text" name="question" id="question" class="form-control" Placeholder="Question">
-               </div>
-               <div class="form-group">
+                </div>
+                <div class="form-group">
                  <label for="inputType">Select type</label>
                  <select name="question_format" id="question_format" class="form-control" onchange="quest_opt()">
                         <option value="Text">Text</option>
