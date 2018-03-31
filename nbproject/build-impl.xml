@@ -1225,14 +1225,14 @@ exists or setup the property manually. For example like this:
     <target if="profiler.info.jvmargs.agent" name="start-profiled-server">
         <nbstartprofiledserver forceRestart="${profiler.j2ee.serverForceRestart}" javaPlatform="${profiler.info.javaPlatform}" startupTimeout="${profiler.j2ee.serverStartupTimeout}">
             <jvmarg value="${profiler.info.jvmargs.agent}"/>
-            <jvmarg value="${profiler.j2ee.agentID}"/>
+            <jvmarg value="${profiler.j2ee.agenPID}"/>
         </nbstartprofiledserver>
     </target>
     <target if="profiler.info.jvmargs.agent" name="start-profiled-server-extraargs">
         <nbstartprofiledserver forceRestart="${profiler.j2ee.serverForceRestart}" javaPlatform="${profiler.info.javaPlatform}" startupTimeout="${profiler.j2ee.serverStartupTimeout}">
             <jvmarg value="${profiler.info.jvmargs.extra}"/>
             <jvmarg value="${profiler.info.jvmargs.agent}"/>
-            <jvmarg value="${profiler.j2ee.agentID}"/>
+            <jvmarg value="${profiler.j2ee.agenPID}"/>
         </nbstartprofiledserver>
     </target>
     <target depends="profile-init,compile-test-single" if="profiler.info.jvmargs.agent" name="-profile-test-single-pre72">

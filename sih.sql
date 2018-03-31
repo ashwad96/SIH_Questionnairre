@@ -31,7 +31,7 @@ CREATE TABLE `question` (
   `QUESTION` text NOT NULL,
   `DESCRIPTION` text NOT NULL,
   `FORMAT` text NOT NULL,
-  `TID` int(11) NOT NULL,
+  `PID` int(11) NOT NULL,
   `REQUIRED` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -39,7 +39,7 @@ CREATE TABLE `question` (
 -- Dumping data for table `question`
 --
 
-INSERT INTO `question` (`QID`, `QUESTION`, `DESCRIPTION`, `FORMAT`, `TID`, `REQUIRED`) VALUES
+INSERT INTO `question` (`QID`, `QUESTION`, `DESCRIPTION`, `FORMAT`, `PID`, `REQUIRED`) VALUES
 (27, 'What is your gender', 'asking for gender', 'Radio Button', 5, 1),
 (29, 'what is the name of the patient?', 'name', 'Text', 5, 0),
 (31, 'What are the issues faced?', 'addressing issues', 'Multiple Choice', 5, 1),
