@@ -171,7 +171,9 @@
 
           
         <footer id="footer">
-            
+            <a href="https://twitter.com" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+			<a href="https://facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+			<a href="https://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
         </footer>
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script  src="js/homePage.js"></script>
