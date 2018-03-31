@@ -20,7 +20,7 @@
             <li><a href="#news" class="li_left">Programs</a></li>
             <li><a href="#contact" class="li_left">Officials Enrolled</a></li>
             <li><a href="#about" class="li_left">Statistics</a></li>
-            <li><a href="#logout" style="float: right" class="right_tab">Logout</a></li>
+            <li><a href="logout.jsp" style="float: right" class="right_tab">Logout</a></li>
             <li><a href="#about" class="right_tab">Notifications</a></li>
             
             <span class="welcome">Welcome Admin</span>
