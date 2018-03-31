@@ -106,7 +106,7 @@
             
         </style>
     </head>
-    <body>
+    <body style="background-color:  #993300">
         
     <div class="loginbox">
         <h1>Sign in</h1><br>
