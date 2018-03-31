@@ -148,7 +148,13 @@ public final class view_005fquestion_005fform_jsp extends org.apache.jasper.runt
                 }
                 else if(format.equalsIgnoreCase("Multiple Choice")){
                     for(String str : options){
-                        out.println("<label><input type=checkbox value=\""+str+"\" name=\""+qid+"_checkbox\" id=\""+qid+"_checkbox\"> \""+str+"\"</label>");
+                        out.println("<input type=checkbox value=\""+str+"\" name=\""+qid+"_checkbox\" id=\""+qid+"_checkbox\" class=check>");
+                        out.println("<label class=radio_label>");
+                        out.println(str);
+                        out.println("</label>");
+                        
+                        out.println("<br><br>");
+//                        out.println("<label><input type=checkbox value=\""+str+"\" name=\""+qid+"_checkbox\" id=\""+qid+"_checkbox\" class=check> \""+str+"\"</label><br>");
                     }
                 }
                 else if(format.equalsIgnoreCase("Drop Down")){

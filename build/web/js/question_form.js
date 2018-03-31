@@ -35,6 +35,10 @@ function create_question(tid){
     var quest_format_element = document.getElementById('question_format');
     var quest_format = quest_format_element.options[quest_format_element.selectedIndex].value;
     text += 'quest_format='+quest_format+'&';
+    var visit_type_element = document.getElementById('visit_type');
+    var visit_type = visit_type_element.options[visit_type_element.selectedIndex].value;
+    text += 'visit_type='+visit_type+'&';
+    
     var description = document.getElementById('question_description').value;
     text += 'description='+description+'&';
     
@@ -143,7 +147,8 @@ function showQuestion(tid){
 function questionChange(){
     if (xmlHttp1.readyState===4 || xmlHttp1.readyState==="complete"){   
         console.log(xmlHttp1.responseText);
-        document.getElementById('added_question').innerHTML = xmlHttp1.responseText;
+        
+        document.getElementById('add_ques').innerHTML = xmlHttp1.responseText;
     } 
 }
 
@@ -181,6 +186,7 @@ function form_delete(tid){
 function del_form(){
     if (xmlHttp1.readyState===4 || xmlHttp1.readyState==="complete"){   
         console.log(xmlHttp1.responseText);
+        showQuestion(xmlHttp1.responseText);
         //redirect to the add question page
     } 
 }

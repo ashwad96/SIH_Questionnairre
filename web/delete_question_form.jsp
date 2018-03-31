@@ -15,6 +15,6 @@
     ps = con.prepareCall(sql);
     ps.executeUpdate();
     
-    response.getWriter().println("success");
+    response.getWriter().println(tid);
     
 %>

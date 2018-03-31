@@ -14,6 +14,7 @@
 <% 
  int tid = Integer.parseInt(request.getParameter("tid"));
  String question = request.getParameter("question");
+ String visit_type = request.getParameter("visit_type");
  String quest_format = request.getParameter("quest_format");
  String description = request.getParameter("description");
  int no_of_option = Integer.parseInt(request.getParameter("no_of_option"));
@@ -32,7 +33,7 @@
  }
  
  if(count==0){
-    String sql1 = "INSERT INTO `question`(`QUESTION`, `DESCRIPTION`, `FORMAT`, `TID`, `REQUIRED`) VALUES ('"+question+"','"+description+"','"+quest_format+"',"+tid+","+required+")";
+    String sql1 = "INSERT INTO `question`(`QUESTION`, `DESCRIPTION`, `FORMAT`, `TID`, `REQUIRED`, `visit_type`) VALUES ('"+question+"','"+description+"','"+quest_format+"',"+tid+","+required+",'"+visit_type+"')";
     System.out.println(sql1);
     PreparedStatement ps = con.prepareStatement(sql1); 
     ps.executeUpdate();
