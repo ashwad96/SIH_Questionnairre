@@ -70,12 +70,12 @@ public final class question_005fform_jsp extends org.apache.jasper.runtime.HttpJ
       out.write("        <a href=\"view_question_form.jsp?tid=");
       out.print(tid);
       out.write("\"><input type=\"button\" name=\"preview\" id=\"preview\" value=\"PREVIEW\" class=\"prev\" style=\"float: right\" /></a>\n");
-      out.write("        \n");
-      out.write("    <center><div id=\"heading\"><h1>QUESTIONNAIRE</h1></div></center>\n");
-      out.write("    <select>\n");
+      out.write("        <select class=\"visit_type\" id=\"visit_type\">\n");
       out.write("        <option value=\"Door to door visit\">Door to door visit</option>\n");
       out.write("        <option value=\"District visit\">District visit</option>\n");
       out.write("    </select>\n");
+      out.write("    <center><div id=\"heading\"><h1>QUESTIONNAIRE</h1></div></center>\n");
+      out.write("    \n");
       out.write("       <div>\n");
       out.write("        \n");
       out.write("            <form>\n");
