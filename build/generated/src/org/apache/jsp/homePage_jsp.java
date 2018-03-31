@@ -169,7 +169,7 @@ public final class homePage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            \n");
       out.write("        </style>\n");
       out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("    <body style=\"background-color:  #993300\">\n");
       out.write("        \n");
       out.write("    <div class=\"loginbox\">\n");
       out.write("        <h1>Sign in</h1><br>\n");
@@ -183,7 +183,6 @@ public final class homePage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </div>\n");
       out.write("        \n");
       out.write("    <div class=\"container\">\n");
-      out.write("  <h2>Carousel Example</h2>\n");
       out.write("  <div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\">\n");
       out.write("    <!-- Indicators -->\n");
       out.write("    <ol class=\"carousel-indicators\">\n");
@@ -197,7 +196,7 @@ public final class homePage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <div class=\"carousel-inner\">\n");
       out.write("\n");
       out.write("      <div class=\"item active\">\n");
-      out.write("          <img class=\"im\" src=\"image/img1.jpeg\" alt=\"Los Angeles\" >\n");
+      out.write("          <img class=\"im\" style=\"height: 30em;\" src=\"image/img1.jpeg\" alt=\"Los Angeles\" >\n");
       out.write("        <div class=\"carousel-caption\">\n");
       out.write("        </div>\n");
       out.write("      </div>\n");
@@ -235,7 +234,9 @@ public final class homePage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("          \n");
       out.write("        <footer id=\"footer\">\n");
-      out.write("            \n");
+      out.write("            <a href=\"https://twitter.com\" class=\"icon-button twitter\"><i class=\"icon-twitter\"></i><span></span></a>\n");
+      out.write("\t\t\t<a href=\"https://facebook.com\" class=\"icon-button facebook\"><i class=\"icon-facebook\"></i><span></span></a>\n");
+      out.write("\t\t\t<a href=\"https://plus.google.com\" class=\"icon-button google-plus\"><i class=\"icon-google-plus\"></i><span></span></a>\n");
       out.write("        </footer>\n");
       out.write("        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>\n");
       out.write("        <script  src=\"js/homePage.js\"></script>\n");
